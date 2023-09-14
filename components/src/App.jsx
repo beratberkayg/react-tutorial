@@ -1,14 +1,15 @@
-import Home from "./pages/Home";
+import Text from "./components/text";
 
 function App() {
-  let name = "berat berkay";
-  let surname = "gökdemir";
+  //props ...
   return (
     <>
       <div>react eğitimi1</div>
       <div>react eğitimi2</div>
       <div>react eğitimi3</div>
-      <Home />
+      <Text />
+      <Text />
+      <Text />
     </>
   );
 }
