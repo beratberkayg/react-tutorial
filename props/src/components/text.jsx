@@ -1,6 +1,11 @@
-const Text = ({ number }) => {
+const Text = ({ number, name }) => {
   console.log(number, "number");
-  return <div> React Eğitimi {number}</div>;
+  console.log(name, "name");
+  return (
+    <div>
+      {name} Eğitimi {number}
+    </div>
+  );
 };
 
 export default Text;
