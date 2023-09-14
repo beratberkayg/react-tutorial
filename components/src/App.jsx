@@ -1,4 +1,4 @@
-import Text from "./components/text";
+import Home from "./pages/Home";
 
 function App() {
   let name = "berat berkay";
@@ -8,7 +8,7 @@ function App() {
       <div>react eğitimi1</div>
       <div>react eğitimi2</div>
       <div>react eğitimi3</div>
-      <Text />
+      <Home />
     </>
   );
 }
