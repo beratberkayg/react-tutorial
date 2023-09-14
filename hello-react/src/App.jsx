@@ -1,5 +1,11 @@
 function App() {
-  return <div>berat berkay gökdemir</div>;
+  let name = "berat berkay";
+  let surname = "gökdemir";
+  return (
+    <div>
+      {name} {surname}
+    </div>
+  );
 }
 
 export default App;
