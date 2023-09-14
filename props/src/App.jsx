@@ -4,12 +4,9 @@ function App() {
   //props ...
   return (
     <>
-      <div>react eğitimi1</div>
-      <div>react eğitimi2</div>
-      <div>react eğitimi3</div>
-      <Text />
-      <Text />
-      <Text />
+      <Text number="1" />
+      <Text number="2" />
+      <Text number="3" />
     </>
   );
 }
