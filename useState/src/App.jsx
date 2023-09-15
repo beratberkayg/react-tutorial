@@ -2,7 +2,7 @@ import { useState } from "react";
 
 function App() {
   const [name, setName] = useState(null);
-  const [data, setData] = useState(null);
+  const [data, setData] = useState([]);
 
   console.log(name);
 
@@ -11,14 +11,14 @@ function App() {
   };
 
   const clickFunc = () => {
-    setData(name);
+    setData((prev) => [...prev, name]);
   };
 
   return (
     <>
       <input type="text" onChange={targetFunc} />
       <button onClick={clickFunc}>Tıkla</button>
-      <div> {data}</div>
+      <div>{data}</div>
     </>
   );
 }
