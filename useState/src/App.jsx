@@ -1,18 +1,12 @@
 import { useState } from "react";
-import Text from "./components/text";
 
 function App() {
-  const [count, setCount] = useState(0);
+  const [name, setName] = useState(null);
 
-  const decrement = () => {
-    setCount(count - 1);
-  };
-
+  console.log(name);
   return (
     <>
-      <button onClick={decrement}>azalt</button>
-      <div>{count}</div>
-      <button onClick={() => setCount(count + 1)}>arttır</button>
+      <input type="text" onChange={(e) => setName(e.target.value)} />
     </>
   );
 }
