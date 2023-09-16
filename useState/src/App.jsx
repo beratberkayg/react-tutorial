@@ -4,7 +4,7 @@ function App() {
   const [name, setName] = useState(null);
   const [data, setData] = useState([]);
 
-  console.log(name);
+  console.log(name, "name");
 
   const targetFunc = (e) => {
     setName(e.target.value);
@@ -14,11 +14,17 @@ function App() {
     setData((prev) => [...prev, name]);
   };
 
+  console.log(data, "data");
+
   return (
     <>
       <input type="text" onChange={targetFunc} />
       <button onClick={clickFunc}>Tıkla</button>
-      <div>{data}</div>
+      <div>
+        {data.map((dt, i) => (
+          <div key={i}>{dt}</div>
+        ))}
+      </div>
     </>
   );
 }
