@@ -23,6 +23,22 @@ body {
   margin: 0 auto;
 }
 
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+nav ul li {
+  transition: all 0.3s ease;
+}
+
+nav ul li:hover {
+  border-bottom: 1px solid #fff;
+}
+
 .container h1 {
   margin-bottom: 15px;
 }
