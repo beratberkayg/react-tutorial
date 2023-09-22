@@ -1,6 +1,6 @@
-import { useParams } from "react-router-dom";
 import { data } from "./Home";
 import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 
 const Detail = () => {
   const { id } = useParams();
